@@ -32,42 +32,6 @@ export function isEmptyMat(mat) {
     return !hasOne;
 }
 
-export function copyMat(mat){
-    const prev = [];
-    for (let row of mat) {
-        const r = [];
-        for (let val of row) {
-          r.push(val);
-        }
-        prev.push(r);
-    }
-    return prev;
-}
-
-export function areEqual(mat1 , mat2){
-    const ROWS = mat1.length;
-    const COLUMNS = mat1[0].length;
-    if(mat2.length === 0){
-        return false;
-    }
-    let equal = true;
-    for(let i=0;i<ROWS;i++){
-        for(let j=0;j<COLUMNS;j++){   
-                 
-            if(mat1[i][j] !== mat2[i][j]){
-                equal = false;
-                break;
-            }
-        }
-        if(!equal){
-            break;
-        }
-    }
-
-    return equal;
-}
-  
-
 // Create Page using given matrix
 export function refreshPage(mat,ROWS,COLUMNS,canvasRef , size,gap,theme){
     

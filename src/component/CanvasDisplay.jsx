@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useContext} from 'react';
-import { refreshPage, zeroMat , randomMatrix, playGame, isEmptyMat, copyMat, areEqual } from './CanvasDisHelper';
+import { refreshPage, zeroMat , randomMatrix, playGame, isEmptyMat} from './CanvasDisHelper';
 import './component.css'
 import appContext from '../context/Context';
 
@@ -19,10 +19,6 @@ export default function CanvasDisplay() {
   const contextVal = useContext(appContext);
   const state = contextVal.state;
   
-  
-  
-  
-
   const handleGame = () =>{
     if(isEmptyMat(mat)){
       contextVal.setState({...state, Play:false,timeSpent:0,gen:0});
@@ -37,7 +33,7 @@ export default function CanvasDisplay() {
   useEffect(()=>{
     zeroMat(mat,ROWS , COLUMNS);
     refreshPage(mat,ROWS, COLUMNS ,canvasRef , size , gap,state.theme);
-  },[])
+  },[state.theme])
   
   useEffect(()=>{
     if(state.random){
