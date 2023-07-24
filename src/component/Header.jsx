@@ -25,7 +25,7 @@ export default function Header({setPopup}) {
     }
 
     const handleGithub = () =>{
-      window.open('https://github.com/Tarun08091997/GameOfLife','_blank');
+      window.open('https://github.com/Tarun08091997/Game-of-life','_blank');
     }
   return (
     <div className='header-container'>
