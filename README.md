@@ -1,5 +1,7 @@
 ﻿# Game-of-life
 
+![image](https://github.com/Tarun08091997/Game-of-life/assets/61690911/a2564653-71fb-4a3a-a3dc-357b8cc37ded)
+
 Website : https://game-of-life-evz7.onrender.com
 
 # Installation
