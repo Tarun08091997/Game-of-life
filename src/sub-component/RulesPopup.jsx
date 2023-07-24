@@ -1,5 +1,5 @@
 import React from 'react'
-import './component.css'
+import './subComponent.css'
 import {GrClose} from 'react-icons/gr';
 const ruleImg = require('../Images/Rules.PNG');
 

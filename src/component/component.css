@@ -71,13 +71,3 @@
     width: 990px;
 }
 
-
-/* Pop up */
-.close-popup{
-    margin-top: 10px;
-    position:absolute;
-    right: 10px;
-    cursor: pointer;
-    height: 25px;
-    width: 25px;
-}

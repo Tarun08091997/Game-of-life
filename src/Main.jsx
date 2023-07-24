@@ -5,7 +5,8 @@ import CanvasDisplay from './component/CanvasDisplay';
 import Header from './component/Header';
 import Used from './component/Used';
 import appContext from './context/Context';
-import RulesPopup from './component/RulesPopup';
+import RulesPopup from './sub-component/RulesPopup';
+
 function Main() {
   const theme = useContext(appContext).state.theme;
   const contextValue = useContext(appContext);
